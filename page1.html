@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alberto Productions | Parte de Programação</title>
+    <!-- CORRIGIDO: Vinculado ao arquivo CSS que contém as regras de tamanho e o .ucfile -->
+    <link rel="stylesheet" href="page1.css">
+</head>
+<body>
+<div class="container">
+
+<header class="cabecalho">
+    <div class="marca">
+        <h1>ALBERTO PRODUCTIONS</h1>
+        <div class="linhadocabecalho"></div>
+        <nav class="links" aria-label="Navegação principal">
+            <a href="index.html" class="ativo">HOME</a>
+            <a href="about us.html">ABOUT US</a>
+        </nav>
+    </div>
+    <img src="Sem título-1.png" alt="Logo da Alberto Productions">
+</header>
+
+<section class="intro">
+    <h1 class="titulo-centralized">Parte de Programação</h1>
+    <h2>Professor Thiago</h2>
+    <p>O professor Thiago cuida da parte de programação do curso, trabalhando conceitos de desenvolvimento front-end e back-end.</p>
+</section>
+
+<!-- SEÇÃO DAS UNIDADES CURRICULARES (GRID) -->
+<section>
+    <h2>Nossas UCs</h2>
+    <p>Confira abaixo as unidades curriculares relacionadas a esta área.</p>
+    
+    <div class="ucs">
+        <div class="uc" role="button" tabindex="0" onclick="abriruc(1)" onkeydown="ativarUc(event, 1)"><p>UC 1</p></div>
+        <div class="uc" role="button" tabindex="0" onclick="abriruc(2)" onkeydown="ativarUc(event, 2)"><p>UC 2</p></div>
+        <div class="uc" role="button" tabindex="0" onclick="abriruc(3)" onkeydown="ativarUc(event, 3)"><p>UC 3</p></div>
+        <div class="uc" role="button" tabindex="0" onclick="abriruc(4)" onkeydown="ativarUc(event, 4)"><p>UC 4</p></div>
+        <div class="uc" role="button" tabindex="0" onclick="abriruc(5)" onkeydown="ativarUc(event, 5)"><p>UC 5</p></div>
+        <div class="uc" role="button" tabindex="0" onclick="abriruc(6)" onkeydown="ativarUc(event, 6)"><p>UC 6</p></div>
+        <div class="uc" role="button" tabindex="0" onclick="abriruc(7)" onkeydown="ativarUc(event, 7)"><p>UC 7</p></div>
+        <div class="uc" role="button" tabindex="0" onclick="abriruc(8)" onkeydown="ativarUc(event, 8)"><p>UC 8</p></div>
+        <div class="uc" role="button" tabindex="0" onclick="abriruc(9)" onkeydown="ativarUc(event, 9)"><p>UC 9</p></div>
+        <div class="uc" role="button" tabindex="0" onclick="abriruc(10)" onkeydown="ativarUc(event, 10)"><p>UC 10</p></div>
+        <div class="uc" role="button" tabindex="0" onclick="abriruc(11)" onkeydown="ativarUc(event, 11)"><p>UC 11</p></div>
+        <div class="uc" role="button" tabindex="0" onclick="abriruc(12)" onkeydown="ativarUc(event, 12)"><p>UC 12</p></div>
+    </div>
+</section>
+
+<!-- SEÇÃO DOS ARQUIVOS/AULAS DA UC SELECIONADA -->
+
+
+<footer class="blocofinal"><p>© 2026 Alberto Productions · Projeto Integrador</p></footer>
+
+<script>
+    // CORRIGIDO: Nome exato do arquivo físico encontrado na sua pasta (Case-Sensitive)
+    function abriruc(numero) {
+        window.location.href = "uc" + numero + "prog.html";
+    }
+
+    function ativarUc(event, numero) {
+        if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            abriruc(numero);
+        }
+    }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto Integrador - Técnico de Informática para a Internet">
+    <title>Alberto Productions | Projeto Integrador</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+<div class="container">
+
+<header class="cabecalho">
+    <div class="marca">
+        <h1>ALBERTO PRODUCTIONS</h1>
+        <div class="linhadocabecalho"></div>
+        <nav class="links" aria-label="Navegação principal">
+            <a href="index.html" class="ativo">HOME</a>
+            <a href="about us.html">ABOUT US</a>
+        </nav>
+    </div>
+    <img src="Sem título-1.png" alt="Logo da Alberto Productions">
+</header>
+
+<section class="intro">
+    <h1 class="titulo-centralizado">Meu Projeto Integrador</h1>
+    <h2 class="titulo-centralizado">Técnico de Informática para a Internet</h2>
+    <p>Aqui apresentamos um pouco do nosso curso, o que já aprendemos e os conhecimentos que ainda vamos desenvolver.</p>
+</section>
+<section>
+    <h2>Matérias do curso</h2>
+    <p>Durante o curso, estamos trabalhando com programação, desenvolvimento web e design, unindo criatividade e tecnologia na criação de projetos.</p>
+</section>
+<section>
+    <h2 class="titulo-centralizado">Escolha uma área para começar</h2>
+    <div class="choice">
+        <div class="img1" role="button" tabindex="0" onclick="mesmaAba()" onkeydown="ativarCard(event, mesmaAba)" aria-label="Abrir área de Programação">
+            <div class="img1text">
+                <div>
+                    <h2>Programação</h2>
+                    <p>Conheça os conteúdos e projetos relacionados à programação, incluindo front-end e back-end.</p>
+                    <span class="clique">Clique para acessar →</span>
+                </div>
+            </div>
+        </div>
+        <div class="img2" role="button" tabindex="0" onclick="page2()" onkeydown="ativarCard(event, page2)" aria-label="Abrir área de Design">
+            <div class="img2text">
+                <div>
+                    <h2>Design</h2>
+                    <p>Explore a parte visual do curso e os conhecimentos de design aplicados aos projetos.</p>
+                    <span class="clique">Clique para acessar →</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+<footer class="blocofinal"><p>© 2026 Alberto Productions · Projeto Integrador</p></footer>
+<script>
+function mesmaAba() { window.location.href = "page1.html"; }
+function page2() { window.location.href = "page2.html"; }
+function ativarCard(event, funcao) {
+    if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        funcao();
+    }
+}
+</script>
+</body>
+</html>
